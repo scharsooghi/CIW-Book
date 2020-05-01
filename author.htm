@@ -1,0 +1,422 @@
+<html>
+
+<!-- #BeginTemplate "template/main_template.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>همراه بانوان</title>
+<script language="javascript">
+function checkInfo(){
+		var status = true;
+		if(document.frm.name.value.length == 0){
+			first.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا فیلد مربوط به نام را کامل نمایید."+"</font>";
+			status = false;
+		}
+		else{
+			first.innerHTML = "";
+			}
+		
+		
+		if(document.frm.email.value.length == 0){
+			mail.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا فیلد مربوط به ایمیل را کامل نمایید."+"</font>";
+			status = false;
+		}
+		else if(document.frm.email.value.length != 0 && document.frm.email.value.indexOf("@") == -1){
+			mail.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا در واردکردن ایمیل دقت نمایید."+"</font>";
+			status = false;
+		}
+		else{
+			mail.innerHTML = "";
+			}
+			
+		if(document.frm.subject.value.length == 0){
+			subj.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا فیلد مربوط به عنوان را کامل نمایید."+"</font>";
+			status = false;
+		}
+		else{
+			first.innerHTML = "";
+			}	
+		
+		if(document.frm.description.value.length == 0){
+			descript.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا  توضیحات خود را وارد نمایید."+"</font>";
+			status = false;
+		}
+		else{
+			first.innerHTML = "";
+			}
+		
+		if(status == false){
+			return false;
+			}
+		else{
+			window.alert(".اطلاعات با موفقیت ارسال شد");
+			return true;
+			}
+		
+	}
+</script>
+<style fprolloverstyle>
+a:link {
+	text-decoration: none;
+	color: #3E003E;
+}
+a:visited {
+	color: #3E003E;
+	text-decoration: none;
+}
+a:hover {
+	color: #F7F1F8;
+	text-decoration: none;
+}
+
+.reg a:hover       { color: #800000; text-decoration: none }
+.reg a        { color: #CC0066; font-family: Tahoma; font-size: 12pt; font-weight: bold; text-decoration:none }
+.reg        { color: #3E003E; font-family: Tahoma; font-size: 12pt; text-decoration:none }
+
+.form {color: #3E003E; font-family: Tahoma; font-size: 10pt; text-decoration:none}
+
+</style>
+</head>
+
+<body topmargin="4" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" style="font-family: Tahoma; font-size: 10px; direction: rtl; text-align: justify" bgcolor="#F7F1F8">
+
+<div align="center">
+	<table border="0" width="900" cellspacing="0" cellpadding="0">
+		<tr>
+			<td>
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+					<font size="2">
+					<img border="0" src="images/logo.jpg" width="900" height="140"></font></td>
+				</tr>
+				<tr>
+					<td height="5">
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<!-- #BeginEditable "menu1" -->
+					<table border="0" width="100%" bgcolor="#B587C0">
+						<tr>
+							<td align="center" height="25" width="200">&nbsp;</td>
+							<td align="center" height="25" width="100"><b>
+							<font color="#3E003E" size="2">
+							<span style="text-decoration: none">
+							<a href="index.htm">صفحهٔ اصلی</a></span></font></b></td>
+							<td align="center" height="25"><b>
+							<span lang="en-us"><font color="#3E003E" size="2">|</font></span></b></td>
+							<td align="center" height="25" width="100">
+							<span lang="fa"><font size="2" color="#3E003E"><b>
+							<a style="text-decoration: none" href="about.htm">در 
+							این کتاب</a></b></font></span></td>
+							<td align="center" height="25"><b>
+							<font color="#3E003E" size="2">|</font></b></td>
+							<td align="center" height="25" width="100"><b>
+							<font color="#3E003E" size="2">
+							<a href="order.htm">سفارش کتاب</a></font></b></td>
+							<td align="center" height="25"><b>
+							<font color="#3E003E" size="2">|</font></b></td>
+							<td align="center" height="25" width="100"><b>
+							<font color="#3E003E" size="2">
+							<a href="contact.htm">ارتباط با ما</a></font></b></td>
+							<td align="center" height="25" width="200">&nbsp;</td>
+						</tr>
+					</table>
+					<!-- #EndEditable -->
+					</td>
+				</tr>
+				<tr>
+					<td height="5"></td>
+				</tr>
+				<tr>
+					<td>
+					<table border="0" width="100%" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="170" valign="top" bgcolor="#DBC7E2">
+							<!-- #BeginEditable "menu2" -->
+							<table border="0" width="100%" cellspacing="0" cellpadding="0">
+								<tr>
+									<td align="right" height="10" style="padding-right: 15px" bgcolor="#DBC7E2">&nbsp;</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="abstract.htm">منتخب کتاب</a></font></b><hr color="#3E003E" size="1" align="right" width="80%">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="toc.htm">فهرست کتاب</a></font></b><hr color="#3E003E" width="80%" size="1" align="right">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><span lang="fa"><a href="cd.htm">
+									معرفی سی دی</a></span></font></b><hr color="#3E003E" width="80%" size="1" align="right">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="publisher.htm">سخن ناشر</a></font></b><hr color="#3E003E" size="1" align="right" width="80%">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#B587C0">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="author.htm">سخن گردآورنده</a></font></b><hr color="#3E003E" size="1" align="right" width="80%">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="faq.htm">سوالات متداول</a></font></b><hr color="#3E003E" size="1" align="right" width="80%">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" style="padding-right: 0" bgcolor="#DBC7E2" height="10" valign="bottom">
+									&nbsp;</td>
+								</tr>
+							</table>
+							<!-- #EndEditable -->
+							</td>
+							<td width="5" rowspan="2">&nbsp;</td>
+							<td bgcolor="#DBC7E2" valign="top" rowspan="2" style="padding: 10px; line-height:150%">
+							<!-- #BeginEditable "main" -->
+							<p align="center"><font size="4" color="#3E003E">
+							هوالحکیم<br>
+							قرآن کریم انسان ساز است و زن ها نیز انسان ساز – امام 
+							خمینی(ره)</font><p align=justify><font size="2" color="#3E003E">
+							
+							نمی دونم لغت «ضعیفه» کی متولد شده؟ یا «جنس دوم» از 
+							کجا و توسط چه کسی به<span lang="fa"> </span>دایره 
+							لغات )فرهنگ واژگان( بشر اضافه شده؟ و همین طور نمی 
+							فهمم چرا خیلی ها<span lang="fa"> </span>اشتباه کردن؟ 
+							اون هم اشتباهات بزرگ ! نمی دونم کی شروع کرد به 
+							اشتباه تفسیر کردن<br>
+							کلمات؟ نمی دونم چرا کرامت زن شد حضور در اجتماع به هر 
+							قیمتی، حتی تن دادن<span lang="fa"> </span>به کارهای 
+							پست، حتی! چرا کرامت یک جا شد فرار از خونه؟ و درجای 
+							دیگه شد<span lang="fa"> </span>نفی ارزش های مذهبی، 
+							اخلاقی، عرفی جامعه؟ زنها فضا رفتن، رئیس جمهور شدن،<br>
+							کارشناس امنیت شبکه شدن، راننده کامیون شدن، کشتی کج 
+							گرفتن اما..<span lang="fa">. </span>اما هنوز در 
+							اعماق ذهن خیلی از انسانها، فارغ از ملیت و نژاد و رنگ 
+							و حتی جنسیتشون،<span lang="fa"> </span>یک جنس بر 
+							دیگری برتری داده، چرا؟ مگه قرار نبود کرامت از دست 
+							رفته ی «زن » با<span lang="fa"> </span>اون همه هیاهو 
+							و سروصدا و حتی به چالش کشیدن نظام خلقت احیاء بشه؟ 
+							چرا نشد؟<span lang="fa"> </span>چرا نتیجه نداد؟ چرا 
+							هنوز ما، هرجائی که هستیم، تو هر محیطی هستیم، شهر، 
+							روستا،<span lang="fa"> </span>دانشگاه، اداره، 
+							کارگاه، ایل و... باید ذهنهایی رو تحمل کنیم که تو 
+							لایه های پنهانی<span lang="fa"> </span>شون توهم دارن 
+							که زور بازو برتری می یاره؟ این فقط بار روانی مسأله 
+							است، بعضی از<span lang="fa"> </span>ما فقط آزار روحی 
+							تحمل می کنیم و بعضی دیگه علاوه بر این، آزار فیزیکی 
+							رو هم!<br>
+							نمی دونم کی این رو جا انداخت که اونی که زورش بیشتر، 
+							جنس برتره؟! همون طور که<span lang="fa"> </span>معلوم 
+							نیست کی برای بار اول گفت رنگ سفید بر سیاه و زرد و 
+							سرخ برتری داره؟! واقعاً<span lang="fa"> </span>اون 
+							کدوم مادر بود که برای اولین بار اجازه داد پسرش شروع 
+							کنه به نادیده گرفتن حق<br>
+							همسر، خواهر، دختر و...؟ کدوم قبیله بود؟ کدوم نژاد؟ 
+							بالاخره از یک جایی شروع شده<span lang="fa"> </span>
+							دیگه! یعنی باید یک اولین بار داشته باشه، حالا اون 
+							اولین بار کی و کجای تاریخ بوده؟<span lang="fa">
+							</span>اصلاً مگه مهمه؟ چه نفعی به حال الآن ما داره؟ 
+							تاریخ، فکر کن....<br>
+							اما چطور همین زنها فارغ از رنگ و ملیت و نژادشون، 
+							تنها کاری رو که فقط اونها بلد<span lang="fa"> </span>
+							بوده و هستن رو انجام ندادن؟ چرا انسان<span lang="fa">
+							</span>نساختن؟<span lang="fa"> </span>چرا در طول 
+							تاریخ، جوامع و تمدن هایی رو نساختن که توش «زن » و 
+							«مرد » در جای خود<span lang="fa"> </span>قرار بگیرن؟ 
+							چرا دنیای بیرون رو مثل جهان درون خودشون پر از عشق و 
+							شور و پاکی و<span lang="fa"> </span>لطافت و مهربانی 
+							نکردن؟<span lang="fa"> </span>این همه خون که تو 
+							تاریخ ریخته شد یعنی چی؟ یعنی زنهای تاریخ تصمیم ساز 
+							نبودن،<span lang="fa"> </span>یعنی توی سیاستگذاری ها 
+							دخالت نداشتن، فقط یک جاهائی اجازه دادن به خاطر یک<br>
+							زن جنگی بشه و هزاران زن بی همسر یا بی پسر بشن...<span lang="fa">
+							</span></font></p>
+							<p align="justify"><font size="2" color="#3E003E">
+							
+							برای تصمیم ساز بودن لازم نبود برن سرلشگر یا فرمانروا 
+							بشن، کافی بود فرمانروای<span lang="fa"> </span>حکیم 
+							عادل یا سرلشگر شجاع جوانمرد تربیت کنن، حتی لازم نبود 
+							پاشون رو از در<span lang="fa"> </span>خونه بیرون 
+							بزارن، کافی بود بشینن تو خونه و انسان تربیت کنن، با 
+							تربیت کردن<span lang="fa"> </span>انسانهای صالح و 
+							شایسته نبض جوامع و تمدن ها رو می گرفتن تو دستشون، 
+							مردها<span lang="fa"> </span>هم در اون بین فلسفه می 
+							بافتن، آپولو هوا می کردن، رئیس جمهور می شدن، لشگر<span lang="fa">
+							</span>کشی می کردن و...<span lang="fa"> </span>
+							</font></p>
+							<p align="justify"><font size="2" color="#3E003E">
+							مردها رو باید گذاشت تا به فعالیتهای مهم شون برسن، 
+							نسل فردا تو آغوش کی انسان<span lang="fa"> </span>
+							بودن رو یاد می گیره؟ از دامن چه کسی به معراج می رسه؟ 
+							قضیه آنقدر ساده است....</font></p>
+							<p align="justify"><font size="2" color="#3E003E">
+							
+							پس چرا وضع الان ما، فارغ از رنگ و نژاد و ملیت و 
+							تحصیلات و طبقه اجتماعی<span lang="fa"> </span>و... 
+							اون چیزی که باید باشه، نیست؟ این همه جنگ، خونریزی، 
+							خشونت، این نابودی<span lang="fa"> </span>محیط زیست، 
+							این همه فقر و بدبختی، قاچاق کودکان، کودکان کار و 
+							خیابان... </font></p>
+							<p align="justify"><font size="2" color="#3E003E">ا<span lang="fa">ی</span>نها<span lang="fa">
+							</span>یعنی چی؟ یعنی زن های تاریخ، نسل های فردای 
+							خوبی نساختن، واقعاً چرا؟ خودمونیم<span lang="fa">
+							</span>فقط، غریبه ای نیست! این سوال رو از مردها که 
+							نمی شه پرسید، 10 مرد با هم<span lang="fa"> </span>
+							نمی تونن یک بچه رو نگه دارن )اما یک زن 10 تا بچه رو 
+							با هم نگه می داره(، اون<span lang="fa"> </span>وقت 
+							بیان نسل تربیت کنن؟<span lang="fa">&nbsp; </span>
+							مردها اینجور وقتها میگن: هه! ساختن نسل، جامعه، 
+							تمدن،کارهای مردونه است،<span lang="fa"> </span>ضعیفه 
+							ها رو چه به این کارها؟ انگار کسی بهشون نگفته: ببین 
+							داداش! این یکی از<span lang="fa"> </span>بدیهی ترین 
+							قوانین طبیعته که هرجا زانوان مرد از رفتن باز می 
+							مونه، تازه زن کارش<span lang="fa"> </span>شروع می 
+							شه!</font></p>
+							<p align="justify"><font size="2" color="#3E003E">
+							
+							حالا اصلاً ول کنیم گذشته رو، الآن چی؟ الآن ما دقیقاً 
+							داریم چی کار می کنیم؟ چرا<span lang="fa"> </span>به 
+							جای ساختن جامعه ای که حداقل خودمون توش راحت باشیم )و 
+							حداکثر زنان<span lang="fa"> </span>نسل های بعد(، 
+							تبعیض و تحقیر و عقب ماندگی قسمت نه چندان کوچکی از 
+							جامعه<span lang="fa"> </span>توش نباشه، داریم وقت 
+							تلف می کنیم؟ از بیراهه می ریم انگار ! تلاش می کنیم،<span lang="fa">
+							</span>درس می خونیم، کار می کنیم، هم بیرون از خونه 
+							هم داخل خونه، بچه تربیت<span lang="fa"> </span>می 
+							کنیم و... همه رو هم سعی می کنیم به نحو احسن انجام 
+							بدیم، برای بچه ها کم<span lang="fa"> </span>نزاریم، 
+							سطح اطلاعات خودمون رو می بریم بالا و..<span lang="fa">.
+							</span>اما انگار هیچ فرقی نمی کنه دیروز و امروز، 
+							امروز و فردا! می دونی اشکال از<span lang="fa">
+							</span>کجاست؟ از ذهن خود ما، از ذهن خود زن ها، اول 
+							باید رو ذهن خودمون کار کنیم.<br>
+							<br>
+							حالا این کتاب قراره اولین گام ما باشه، اولین گام 
+							برای اینکه بدونیم هنوز خیلی چیزا<span lang="fa">
+							</span>رو نمی دونیم، برای اینکه بدونیم فرمول های 
+							اولیه ساختن نسل بعد چیه؟ برای اینکه<span lang="fa">
+							</span>شروع کنیم به تربیت جامعه و التیام بخشیدن زخم 
+							های اون، این همون کاریه که ما<br>
+							خوب بلدیم، اینکه پای یک بچه زمین خورده رو ببوسیم یا 
+							اینکه قدم به قدم تربیتش<span lang="fa"> </span>کنیم 
+							و رفتارهای بدش رو اصلاح؛ زخم های جامعه رو فقط قلب 
+							جوشان زنها می تونه<span lang="fa"> </span>درمان کنه 
+							و اشتباهات و کج روی هاش رو هم فقط حواس جمع و نکته 
+							بین خانمها<span lang="fa"> </span>می تونه به مسير 
+							اصلي برگردونه.<br></p>
+							<br>
+							</font><span style="letter-spacing: 1pt; line-height: 200%">
+							<font face="IranNastaliq" size="5" color="#3E003E">
+							همراه&nbsp;&nbsp; بانوان&nbsp;&nbsp; اولین تجربه&nbsp; 
+							است&nbsp;&nbsp;&nbsp; در راه ارتقاء&nbsp; سطح آگاهی&nbsp; 
+							و تعالی&nbsp; زنان،&nbsp; دختران&nbsp; و مادران این 
+							مرز و بوم، برای &nbsp;ساختن جامعه&nbsp; و تمدنی با شکوه، 
+							پویا و اثرگذار، با انسانهایی صالح، شایسته، حکیم، 
+							شجاع، صدیق و عادل.<span lang="fa">
+							پس اولین &nbsp;تجربه تقدیم به همه زنان و دختران سرزمین 
+							مادرم.<span lang="fa"> </span>
+							</span></font></span>
+							<blockquote>
+								<p align="left">
+								<span lang="fa" style="letter-spacing: 1pt">
+								<font face="IranNastaliq" size="5" color="#3E003E">
+								فاطمه نماز دوست</font></p>
+							</blockquote>
+							</p><font size="2" color="#3E003E"><br>
+							<br>
+&nbsp;</font><!-- #EndEditable --></td>
+						</tr>
+						<tr>
+							<td width="170" valign="bottom" bgcolor="#DBC7E2">
+							<img border="0" src="images/corner.jpg" width="170" height="192"></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+					<td height="5"></td>
+				</tr>
+				<tr>
+					<td bgcolor="#DBC7E2" align="center" height="30">
+					<font color="#3E003E" style="font-size: 11pt">این سایت تنها 
+					سایت مجاز فروش کتاب همراه بانوان است.</font></td>
+				</tr>
+				<tr>
+					<td align="center" height="5"></td>
+				</tr>
+				<tr>
+					<td>
+					<table border="0" width="100%" bgcolor="#B587C0" cellspacing="0" cellpadding="0" height="20">
+						<tr>
+							<td align="center" height="15" width="280">&nbsp;</td>
+							<td align="center" height="15" width="70">
+							<font color="#3E003E" style="font-size: 9pt">
+							<a href="index.htm">صفحهٔ اصلی</a></font></td>
+							<td align="center" height="15"><span lang="en-us">
+							<font color="#3E003E" style="font-size: 9pt">|</font></span></td>
+							<td align="center" height="15" width="70">
+							<span lang="fa"><font color="#3E003E">
+							<span style="font-size: 9pt"><a href="about.htm">
+							در این کتاب</a></span></font></span></td>
+							<td align="center" height="15">
+							<font color="#3E003E" style="font-size: 9pt">|</font></td>
+							<td align="center" height="15" width="70">
+							<font color="#3E003E" style="font-size: 9pt">
+							<a href="order.htm">سفارش کتاب</a></font></td>
+							<td align="center" height="15">
+							<font color="#3E003E" style="font-size: 9pt">|</font></td>
+							<td align="center" height="15" width="70">
+							<font color="#3E003E" style="font-size: 9pt">
+							<a href="contact.htm">ارتباط با ما</a></font></td>
+							<td align="center" height="15" width="280">&nbsp;</td>
+						</tr>
+						<tr>
+							<td align="center" height="30" colspan="9" bgcolor="#3E003E">
+							<table border="0" width="100%" cellspacing="0" cellpadding="0">
+								<tr>
+									<td width="440">
+									<p align="left">
+									<font color="#DBC7E2" style="font-size: 9pt">
+									© تمامی حقوق پرای صاحب سایت محفوظ است.</font></td>
+									<td width="20">
+									<p align="center"><font color="#DBC7E2">|</font></td>
+									<td>
+									<font color="#DBC7E2" style="font-size: 9pt">
+									Made and Designed by Charsooghi ©2010</font></td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

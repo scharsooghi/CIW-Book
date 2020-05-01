@@ -1,0 +1,510 @@
+<html>
+
+<!-- #BeginTemplate "template/main_template.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>همراه بانوان</title>
+<script language="javascript">
+function checkInfo(){
+		var status = true;
+		if(document.frm.name.value.length == 0){
+			first.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا فیلد مربوط به نام را کامل نمایید."+"</font>";
+			status = false;
+		}
+		else{
+			first.innerHTML = "";
+			}
+		
+		
+		if(document.frm.email.value.length == 0){
+			mail.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا فیلد مربوط به ایمیل را کامل نمایید."+"</font>";
+			status = false;
+		}
+		else if(document.frm.email.value.length != 0 && document.frm.email.value.indexOf("@") == -1){
+			mail.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا در واردکردن ایمیل دقت نمایید."+"</font>";
+			status = false;
+		}
+		else{
+			mail.innerHTML = "";
+			}
+			
+		if(document.frm.subject.value.length == 0){
+			subj.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا فیلد مربوط به عنوان را کامل نمایید."+"</font>";
+			status = false;
+		}
+		else{
+			first.innerHTML = "";
+			}	
+		
+		if(document.frm.description.value.length == 0){
+			descript.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا  توضیحات خود را وارد نمایید."+"</font>";
+			status = false;
+		}
+		else{
+			first.innerHTML = "";
+			}
+		
+		if(status == false){
+			return false;
+			}
+		else{
+			window.alert(".اطلاعات با موفقیت ارسال شد");
+			return true;
+			}
+		
+	}
+</script>
+<style fprolloverstyle>
+a:link {
+	text-decoration: none;
+	color: #3E003E;
+}
+a:visited {
+	color: #3E003E;
+	text-decoration: none;
+}
+a:hover {
+	color: #F7F1F8;
+	text-decoration: none;
+}
+
+.reg a:hover       { color: #800000; text-decoration: none }
+.reg a        { color: #CC0066; font-family: Tahoma; font-size: 12pt; font-weight: bold; text-decoration:none }
+.reg        { color: #3E003E; font-family: Tahoma; font-size: 12pt; text-decoration:none }
+
+.form {color: #3E003E; font-family: Tahoma; font-size: 10pt; text-decoration:none}
+
+</style>
+</head>
+
+<body topmargin="4" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" style="font-family: Tahoma; font-size: 10px; direction: rtl; text-align: justify" bgcolor="#F7F1F8">
+
+<div align="center">
+	<table border="0" width="900" cellspacing="0" cellpadding="0">
+		<tr>
+			<td>
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+					<font size="2">
+					<img border="0" src="images/logo.jpg" width="900" height="140"></font></td>
+				</tr>
+				<tr>
+					<td height="5">
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<!-- #BeginEditable "menu1" -->
+					<table border="0" width="100%" bgcolor="#B587C0">
+						<tr>
+							<td align="center" height="25" width="200">&nbsp;</td>
+							<td align="center" height="25" width="100"><b>
+							<font color="#3E003E" size="2">
+							<span style="text-decoration: none">
+							<a href="index.htm">صفحهٔ اصلی</a></span></font></b></td>
+							<td align="center" height="25"><b>
+							<span lang="en-us"><font color="#3E003E" size="2">|</font></span></b></td>
+							<td align="center" height="25" width="100">
+							<span lang="fa"><font size="2" color="#3E003E"><b>
+							<a style="text-decoration: none" href="about.htm">در 
+							این کتاب</a></b></font></span></td>
+							<td align="center" height="25"><b>
+							<font color="#3E003E" size="2">|</font></b></td>
+							<td align="center" height="25" width="100"><b>
+							<font color="#3E003E" size="2">
+							<a href="order.htm">سفارش کتاب</a></font></b></td>
+							<td align="center" height="25"><b>
+							<font color="#3E003E" size="2">|</font></b></td>
+							<td align="center" height="25" width="100"><b>
+							<font color="#3E003E" size="2">
+							<a href="contact.htm">ارتباط با ما</a></font></b></td>
+							<td align="center" height="25" width="200">&nbsp;</td>
+						</tr>
+					</table>
+					<!-- #EndEditable -->
+					</td>
+				</tr>
+				<tr>
+					<td height="5"></td>
+				</tr>
+				<tr>
+					<td>
+					<table border="0" width="100%" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="170" valign="top" bgcolor="#DBC7E2">
+							<!-- #BeginEditable "menu2" -->
+							<table border="0" width="100%" cellspacing="0" cellpadding="0">
+								<tr>
+									<td align="right" height="10" style="padding-right: 15px" bgcolor="#DBC7E2">&nbsp;</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#B587C0">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="abstract.htm">منتخب کتاب</a></font></b><hr color="#3E003E" size="1" align="right" width="80%">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="toc.htm">فهرست کتاب</a></font></b><hr color="#3E003E" width="80%" size="1" align="right">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><span lang="fa"><a href="cd.htm">
+									معرفی سی دی</a></span></font></b><hr color="#3E003E" width="80%" size="1" align="right">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="publisher.htm">سخن ناشر</a></font></b><hr color="#3E003E" size="1" align="right" width="80%">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="author.htm">سخن گردآورنده</a></font></b><hr color="#3E003E" size="1" align="right" width="80%">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="faq.htm">سوالات متداول</a></font></b><hr color="#3E003E" size="1" align="right" width="80%">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" style="padding-right: 0" bgcolor="#DBC7E2" height="10" valign="bottom">
+									&nbsp;</td>
+								</tr>
+							</table>
+							<!-- #EndEditable -->
+							</td>
+							<td width="5" rowspan="2">&nbsp;</td>
+							<td bgcolor="#DBC7E2" valign="top" rowspan="2" style="padding: 10px; line-height:150%">
+							<!-- #BeginEditable "main" -->
+							<p align="center"><span lang="fa">
+							<font size="4" color="#3E003E">منتخب کتاب</font></span></p>
+							<p align="justify"><font size="2" color="#3E003E">
+							زنان اعتقادي نسبت به اعتلاي فرهنگي خود و يا نياز به 
+							رشد اطلاعاتي<span lang="fa">‌</span>شان در سطوح كلان 
+							احساس نمي‌كنند. و ابتدا بايد اين معضل را حل كرد يعني 
+							خودباوري زنان از طرف خودشان. ....<br>
+							<br>
+							در جامعه و فرهنگ اسلامي، سه چهره از زن داريم، يکي زن 
+							سنتي و مقدس مأب، يکي چهره زن متجدد و اروپايي مأب که 
+							تازه شروع به رشد و تکثير کرده است، و يکي هم چهره 
+							فاطمه عليها سلام و زنان فاطمه وار که هيچ شباهت و وجه 
+							مشترکي با چهره اي به نام زن سنتي ندارد....<br>
+							<br>
+							قرآن کریم هنگام طرح مسئله زن ومرد می گوید : این دو 
+							را از چهره ذکورت وانوثت نشناسید؛ بلکه از چهره 
+							انسانیت بشناسید وحقیقت انسان را روح او تشکیل می دهد؛ 
+							نه بدن او. انسانیت انسان را جان او تأمین می کند؛ نه 
+							جسم او و نه مجموع جسم وجان. ...<br>
+							<br>
+							به خاطر دارم زمانی فکر می کردم که به عنوان یک زن 
+							بتوانم به سادگی تعادلی میان مادری کردن، شغل و حرفه و 
+							علایق بیرونی ام به وجود آورم و در ضمن یک همسر کامل و 
+							فرزند خوب برای پدر و مادرم باشم. تا زمان تولد فرزند 
+							دوممان وضع روبه راهی داشتم. در این زمان زندگیم از حد 
+							تعادل خارج شد. .........<br>
+							<br>
+							روانشناسان معتقدند كه دوران سي سالگي، دوره تحول يا 
+							تغيير ساختاري است. زنان سعي مي‏كنند در اين دوره به 
+							ساخت موجود زندگي خود خاتمه دهند و امكان خلق ساختار 
+							جديدي را به وجود آورند. ...........<br>
+							<br>
+							زنان از همان ابتدا در پیشبرد و گسترش دانش سهیم بوده 
+							اند، اما سهم و مشارکت ایشان غالباً مورد شناسایی قرار 
+							نگرفته است. تاریخ نویسانی که به این موضوع علاقمند 
+							بوده اند در مورد سهم زنان به روشنگری پرداخته 
+							اند......
+							<br>
+							<br>
+							یکی از راهکارهای مهم جهت اشتغال زنان، توسعه کار 
+							آفرینی درمیان آنان می باشد. ایجاد تفکر کار آفرینی 
+							باعث می شود آنها با بهره گیری از استعدادهای بالقوه 
+							خود، افرادی خلاق، نو آور و کارآفرین شوند و خود را 
+							باور نمایند که این خود باوری نه تنها منجر به تسلط و 
+							موفقیت آنها در زندگی شان می شود، بلکه بسیاری از نا 
+							هنجاری های فکری و روانی که امروز با آن دست به گریبان 
+							هستند را کاهش داده و آنان را به جایگاه واقعی خود می 
+							رساند.........<br>
+							<br>
+							تدبير منزل، تربيت فرزندان و همسر داري، از ديرباز، در 
+							حوزه مسئوليت و نقش‏هاي اجتماعي زنان بوده است؛ اما در 
+							جوامع مدرن و صنعتي زنان افزون بر نقش مادري و همسري، 
+							پا به پاي مردان و برابر با آنان به کار بيرون از خانه 
+							پرداختند............<br>
+							<br>
+							توزيع نسبي زنان سرپرست خانوار به کل سرپرستان خانوار 
+							کشور در سال 1385، 46/9 درصد برآورد شده است........<br>
+							<br>
+							مشکلاتی که زن بودن برای این کارگران ایجاد می‌کند، 
+							هیچ‌وقت در خطابه خاطبان نمی‌شنویم. ..........<br>
+							<br>
+							در جامعة ما اگر چه سطح زندگي بسياري از افراد در حدي 
+							متوسط دور مي‌زند،‌ اما بيماري اجتماعي اسراف و گرايش 
+							به تجملات، بسياري از افراد همين قشر متوسط را در 
+							جهنمي خود ساخته مي‌آزارد. .........<br>
+							<br>
+							امروزه جامعه زنان ما، با وجود تلاش‏هاي در خور تحسين 
+							نظام اسلامي، از مشكلات و معضلاتي رنج مي‏برد كه با 
+							چشم فروبستن از آن‏ها، آينده‏اي تأسف بار دور از دسترس 
+							نخواهد بود. .........<br>
+							<br>
+							بالا رفتن سن ازدواج، افزايش آمار طلاق، زنان تنها، 
+							استفاده ابزاري از زن، زنان خياباني، افزايش 
+							بيماري‏هاي جنسي، كاهش امنيت اجتماعي 
+							دختران............<br>
+							<br>
+							خشونت نسبت به زنان پدیده ای جدید نبوده و از پیشینه 
+							اي تاریخی برخوردار است اما می توان گفت توجه به آن به 
+							عنوان مساله ای اجتماعی مقوله ای جدید است. 
+							................<br>
+							<br>
+							یافته ها نشان می دهد که ارتباط عاطفی اعضای خانواده 
+							از طریق آگاهی یافتن از احساسات سایرین و ابراز عواطف 
+							نسبت به یکدیگر در خانواده های نوجوانان بزهکار نسبت 
+							به نوجوانان غیربزهکار در سطح پایین تری می 
+							باشد.............<br>
+							<br>
+							قرآن، برخلاف همه آراء فلسفى و مذهبى و عادتهاى پيش از 
+							نزول قرآن و سنتهاى همزمان با نزول قرآن، حقيقت وجودى 
+							زن را همانند مرد دانسته و مانند ديگران سرشت وى را 
+							جدا از مرد و طفيلى معرفى نكرده است ...............<br>
+							<br>
+							نتايج مباركي كه از پيشرفت علمي و فكري زنان مشاهده 
+							شده است، گوياي اين حقيقت است كه ضعف و عقب‏ماندگي زن، 
+							مربوط به قضا و قدر (سرنوشت) نيست كه گريزي از آن 
+							نباشد بلكه به سبب سستي و معطل گذاردن عنصر آگاهي و 
+							قدرت در شكل‏گيري وجود و تربيت شخصيت اوست. 
+							............<br>
+							<br>
+							زن در اديان توحيدي و غير‌توحيدي و نيز در ملل متمدن و 
+							غير‌متمدن، به صورت‌هاي مختلفي ارزش‌گذاري شده 
+							است.........</font></p>
+							<div align="center">
+								<table border="1" width="80%" cellspacing="0" cellpadding="5" bordercolor="#3E003E">
+									<tr>
+										<td>
+										<p align="justify">
+										<font size="2" color="#3E003E">مقام 
+										فاطمه زهرا(س) در خور آن است كه عقول 
+										برجسته انسانهاى بزرگ در اصلى‏ترين 
+										رشته‏هاى تفكرات ايشان بينديشند و زبانهاى 
+										فصيح‏ترين و بليغ‏ترين گويندگان، شعرا و 
+										سرايندگان آن انديشه‏ها را در قالب كلمات 
+										بياورند. ............</font></td>
+									</tr>
+								</table>
+							</div>
+							<p align="justify"><font size="2" color="#3E003E">
+							مهم ترين عاملي كه ميان افراد خانواده رأفت، گذشت و 
+							ايثار را زنده مي‌كند، تجلي روح مادر در خانواده 
+							است؛..........<br>
+							<br>
+							حق مادرت اين است که بداني او تو را در جايي نگه داشته 
+							که کسي نگه نمي دارد و از ميوه دلش به تو داده که کسي 
+							به کسي نمي دهد و از تو با همه وجودش از گوش و چشم و 
+							دست و پا و موي و پوست، با شادماني و سرور نگهباني و 
+							نگهداري کرده.............<br>
+							<br>
+							وقتی خدا مادران را می آفرید در روز ششم تا دیروقت كار 
+							می كرد. فرشته‌ای اومد و پرسید: چرا اینقدر روی این 
+							یكی وقت می گذاری؟ و خدا پاسخ داد : .............</font></p>
+							<div align="center">
+								<table border="1" width="370" cellspacing="0" cellpadding="5" bordercolor="#3E003E">
+									<tr>
+										<td>
+										<p align="center">
+										<font size="2" color="#3E003E">خانواده 
+										مهم ترین مکتب تربیت و تکامل انسان هاست</font></td>
+									</tr>
+								</table>
+							</div>
+							<p align="justify"><font size="2" color="#3E003E">
+							<br>
+							زنان تحصيل‏كرده پس از اينكه وارد نظام خانواده شدند، 
+							در جهت تحكيم آن مى‏توانند نقش‏هاى ذيل را داشته 
+							باشند:<br>
+&nbsp;&nbsp;&nbsp; الف. تدوين برنامه خانواده: <br>
+&nbsp;&nbsp;&nbsp; ب. شيوه مواجهه با مسائل جديد: .................<br>
+							<br>
+							بروز اختلاف و عدم تفاهم در خانواده امری شایع است و 
+							هیچ خانواده‌ای از این امر مستثنی نیست، اما گاهی این 
+							اتفاقات به تعارض‌های شدید منجر 
+							می‌شود................</font></p>
+							<div align="center">
+								<table border="1" width="80%" cellspacing="0" cellpadding="5" bordercolor="#3E003E">
+									<tr>
+										<td>
+										<p align="justify">
+										<font size="2" color="#3E003E">خانواده 
+										مخزن خوبی برای فرهنگ هر کشور و عالی ترین 
+										مرکز رشد و بالندگی معارف تربیتی اسلام 
+										است که فروپاشاندن آن در واقع غارت همه 
+										کشور و همه منابع انسانی آن است و اسلام 
+										با این نظر به ازدواج می نگرد. ......</font></td>
+									</tr>
+								</table>
+							</div>
+							<p align="justify"><font size="2" color="#3E003E">
+							<br>
+							خانواده نخستین بنای ساختمان بشریت و تنها مسیر شروع 
+							برای تولد انسان ها و بهترین محل برای رشد و شکوفایی 
+							استعدادهاست. ........<br>
+							<br>
+							تربیت فرزند در اسلام قبل از تولد او آغاز می شود و 
+							اولین مرحله ی آن انتخاب همسر است.........<br>
+							<br>
+							فيلم‌هاي پورنو تاثیرات بسیار بد و مخربی بر نگرش و 
+							رفتار جنسی نوجوانان و جوانان دارد، اين فيلم‌ها تصوير 
+							نادرستي از روابط زن و مرد نيز ارائه مي‌دهند. 
+							.............<br>
+							<br>
+							نیازهای دخترتان را برای نشان دادن فردیت، هویت و 
+							متفاوت بودن با شما را درک کرده و گفته های منفی آنان 
+							را به دل نگیرید......<br>
+							<br>
+							<br>
+							<br>
+							<b>لکه چربی:</b> نقاط چرب بر روی پوشاک را با آرد ، 
+							می توان از بین برد . مقداری آرد روی لکه بریزید 
+							...........<br>
+							<b>رفع بو از ظروف:</b> براي برطرف کردن بوي ظروف کافي 
+							است که کمي آب گرم مخلوط با گرد خردل روي آنها بريزيد 
+							و بشوييد،بعد با آب ساده شستشو دهيد و خشک 
+							کنيد.............<br>
+							<b>جلوگيري از سوختن شير:</b> براي جلوگيري از سوختن 
+							شير در موقع جوشيدن لبهء ظرف را با روغن چرب 
+							کنيد.............<br>
+							<b>نگهداری از روغن زیتون:</b> می توانید داخل شیشه 
+							روغن زیتون یک حبه قند بیندازید ............<br>
+							<b>جاروبرقی:</b> جاروبرقی باید همیشه کاملا تمیز باشد 
+							و لوله های آن گرفتگی نداشته باشد تا فشار به موتور 
+							نیاید .......<br>
+							<br>
+							<br>
+							<br>
+							<b>پيام پيامبر به دختران:</b> بر دختر بودن خود 
+							بباليد، از فرصتها سود جوييد، حيا را پاس داريد، 
+							همواره دانش بجوييد، قدردان والدين خود باشيد </font>
+							</p>
+							<p align="justify"><font size="2" color="#3E003E">
+							<br>
+							<b>با چه كسى رفاقت كنيم؟ </b><br>
+							امام صادق(ع) رفقا را سه نوع مى‏داند:</font></p>
+							<p align="justify"><font size="2" color="#3E003E">&nbsp;<span lang="fa">۱</span>- 
+							كسى كه مانند غذا به آن نياز هست و آن «رفيق عاقل‏» 
+							است.</font></p>
+							<p align="justify"><font size="2" color="#3E003E">&nbsp;<span lang="fa">۲</span>- 
+							كسى كه وجود او براى انسان به منزله بيمارى مزاحم و 
+							رنج‏آور است و آن «رفيق احمق‏» است.</font></p>
+							<p align="justify"><font size="2" color="#3E003E">&nbsp;<span lang="fa">۳</span>- 
+							كسى كه وجودش به منزله داروى شفا بخش است و آن «رفيق 
+							روشن‏بين و اهل خرد» است. .............</font></p>
+							<p align="justify"><font size="2" color="#3E003E">
+							<br>
+							وقتی آدم دختر باشه خیلی عالیه! تو درحال رشد جلوه های 
+							تازه ای از زندگی را کشف می کنی. روابطت با دیگران عوض 
+							می شود. دلت میخواهد خیلی کارها بکنی. نقشه هایی می 
+							کشی..................<br>
+							یکی از مهم‌ترین عواملی که سبب شده تا شاهد بالا رفتن 
+							سن ازدواج و حتی پایین آمدن آمار ازدواج باشیم اسراف 
+							در هزینه‌های زندگی است........... <br>
+							چه معجزه ای است این اینترنت! هرساعت از روز یا شب که 
+							بخواهی به آن متصل می شوی وهمیشه کسی هست که با او 
+							صحبت کنی. آدم احساس میکند می تواند با تمام دنیا بحث 
+							کند! .........<br>
+							ارزش حيات به حدي است كه تو مي‌تواني در سايه آن، تجسم 
+							حق و حقيقت شوي و نمايانگر شكوه هدف خلقت 
+							گردي............<br>
+							<br>
+&nbsp;</font><!-- #EndEditable --></td>
+						</tr>
+						<tr>
+							<td width="170" valign="bottom" bgcolor="#DBC7E2">
+							<img border="0" src="images/corner.jpg" width="170" height="192"></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+					<td height="5"></td>
+				</tr>
+				<tr>
+					<td bgcolor="#DBC7E2" align="center" height="30">
+					<font color="#3E003E" style="font-size: 11pt">این سایت تنها 
+					سایت مجاز فروش کتاب همراه بانوان است.</font></td>
+				</tr>
+				<tr>
+					<td align="center" height="5"></td>
+				</tr>
+				<tr>
+					<td>
+					<table border="0" width="100%" bgcolor="#B587C0" cellspacing="0" cellpadding="0" height="20">
+						<tr>
+							<td align="center" height="15" width="280">&nbsp;</td>
+							<td align="center" height="15" width="70">
+							<font color="#3E003E" style="font-size: 9pt">
+							<a href="index.htm">صفحهٔ اصلی</a></font></td>
+							<td align="center" height="15"><span lang="en-us">
+							<font color="#3E003E" style="font-size: 9pt">|</font></span></td>
+							<td align="center" height="15" width="70">
+							<span lang="fa"><font color="#3E003E">
+							<span style="font-size: 9pt"><a href="about.htm">
+							در این کتاب</a></span></font></span></td>
+							<td align="center" height="15">
+							<font color="#3E003E" style="font-size: 9pt">|</font></td>
+							<td align="center" height="15" width="70">
+							<font color="#3E003E" style="font-size: 9pt">
+							<a href="order.htm">سفارش کتاب</a></font></td>
+							<td align="center" height="15">
+							<font color="#3E003E" style="font-size: 9pt">|</font></td>
+							<td align="center" height="15" width="70">
+							<font color="#3E003E" style="font-size: 9pt">
+							<a href="contact.htm">ارتباط با ما</a></font></td>
+							<td align="center" height="15" width="280">&nbsp;</td>
+						</tr>
+						<tr>
+							<td align="center" height="30" colspan="9" bgcolor="#3E003E">
+							<table border="0" width="100%" cellspacing="0" cellpadding="0">
+								<tr>
+									<td width="440">
+									<p align="left">
+									<font color="#DBC7E2" style="font-size: 9pt">
+									© تمامی حقوق پرای صاحب سایت محفوظ است.</font></td>
+									<td width="20">
+									<p align="center"><font color="#DBC7E2">|</font></td>
+									<td>
+									<font color="#DBC7E2" style="font-size: 9pt">
+									Made and Designed by Charsooghi ©2010</font></td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

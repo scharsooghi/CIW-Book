@@ -1,0 +1,656 @@
+<html>
+
+<!-- #BeginTemplate "template/main_template.dwt" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>همراه بانوان</title>
+<script language="javascript">
+function checkInfo(){
+		var status = true;
+		if(document.frm.name.value.length == 0){
+			first.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا فیلد مربوط به نام را کامل نمایید."+"</font>";
+			status = false;
+		}
+		else{
+			first.innerHTML = "";
+			}
+		
+		
+		if(document.frm.email.value.length == 0){
+			mail.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا فیلد مربوط به ایمیل را کامل نمایید."+"</font>";
+			status = false;
+		}
+		else if(document.frm.email.value.length != 0 && document.frm.email.value.indexOf("@") == -1){
+			mail.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا در واردکردن ایمیل دقت نمایید."+"</font>";
+			status = false;
+		}
+		else{
+			mail.innerHTML = "";
+			}
+			
+		if(document.frm.subject.value.length == 0){
+			subj.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا فیلد مربوط به عنوان را کامل نمایید."+"</font>";
+			status = false;
+		}
+		else{
+			first.innerHTML = "";
+			}	
+		
+		if(document.frm.description.value.length == 0){
+			descript.innerHTML = "<font face='tahoma' size='1' color='red'>"+" *لطفا  توضیحات خود را وارد نمایید."+"</font>";
+			status = false;
+		}
+		else{
+			first.innerHTML = "";
+			}
+		
+		if(status == false){
+			return false;
+			}
+		else{
+			window.alert(".اطلاعات با موفقیت ارسال شد");
+			return true;
+			}
+		
+	}
+</script>
+<style fprolloverstyle>
+a:link {
+	text-decoration: none;
+	color: #3E003E;
+}
+a:visited {
+	color: #3E003E;
+	text-decoration: none;
+}
+a:hover {
+	color: #F7F1F8;
+	text-decoration: none;
+}
+
+.reg a:hover       { color: #800000; text-decoration: none }
+.reg a        { color: #CC0066; font-family: Tahoma; font-size: 12pt; font-weight: bold; text-decoration:none }
+.reg        { color: #3E003E; font-family: Tahoma; font-size: 12pt; text-decoration:none }
+
+.form {color: #3E003E; font-family: Tahoma; font-size: 10pt; text-decoration:none}
+
+</style>
+</head>
+
+<body topmargin="4" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0" style="font-family: Tahoma; font-size: 10px; direction: rtl; text-align: justify" bgcolor="#F7F1F8">
+
+<div align="center">
+	<table border="0" width="900" cellspacing="0" cellpadding="0">
+		<tr>
+			<td>
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+					<font size="2">
+					<img border="0" src="images/logo.jpg" width="900" height="140"></font></td>
+				</tr>
+				<tr>
+					<td height="5">
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<!-- #BeginEditable "menu1" -->
+					<table border="0" width="100%" bgcolor="#B587C0">
+						<tr>
+							<td align="center" height="25" width="200">&nbsp;</td>
+							<td align="center" height="25" width="100"><b>
+							<font color="#3E003E" size="2">
+							<span style="text-decoration: none">
+							<a href="index.htm">صفحهٔ اصلی</a></span></font></b></td>
+							<td align="center" height="25"><b>
+							<span lang="en-us"><font color="#3E003E" size="2">|</font></span></b></td>
+							<td align="center" height="25" width="100">
+							<span lang="fa"><font size="2" color="#3E003E"><b>
+							<a style="text-decoration: none" href="about.htm">در 
+							این کتاب</a></b></font></span></td>
+							<td align="center" height="25"><b>
+							<font color="#3E003E" size="2">|</font></b></td>
+							<td align="center" height="25" width="100"><b>
+							<font color="#3E003E" size="2">
+							<a href="order.htm">سفارش کتاب</a></font></b></td>
+							<td align="center" height="25"><b>
+							<font color="#3E003E" size="2">|</font></b></td>
+							<td align="center" height="25" width="100"><b>
+							<font color="#3E003E" size="2">
+							<a href="contact.htm">ارتباط با ما</a></font></b></td>
+							<td align="center" height="25" width="200">&nbsp;</td>
+						</tr>
+					</table>
+					<!-- #EndEditable -->
+					</td>
+				</tr>
+				<tr>
+					<td height="5"></td>
+				</tr>
+				<tr>
+					<td>
+					<table border="0" width="100%" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="170" valign="top" bgcolor="#DBC7E2">
+							<!-- #BeginEditable "menu2" -->
+							<table border="0" width="100%" cellspacing="0" cellpadding="0">
+								<tr>
+									<td align="right" height="10" style="padding-right: 15px" bgcolor="#DBC7E2">&nbsp;</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="abstract.htm">منتخب کتاب</a></font></b><hr color="#3E003E" size="1" align="right" width="80%">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#B587C0">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="toc.htm">فهرست کتاب</a></font></b><hr color="#3E003E" width="80%" size="1" align="right">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><span lang="fa"><a href="cd.htm">
+									معرفی سی دی</a></span></font></b><hr color="#3E003E" width="80%" size="1" align="right">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="publisher.htm">سخن ناشر</a></font></b><hr color="#3E003E" size="1" align="right" width="80%">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="author.htm">سخن گردآورنده</a></font></b><hr color="#3E003E" size="1" align="right" width="80%">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" height="40" style="padding-right: 15px" bgcolor="#DBC7E2">
+									<b><font size="2" color="#3E003E">
+									<img border="0" src="images/bulet.gif" width="10" height="10"><span lang="en-us">&nbsp;
+									</span><a href="faq.htm">سوالات متداول</a></font></b><hr color="#3E003E" size="1" align="right" width="80%">
+									</td>
+								</tr>
+								<tr>
+									<td align="right" style="padding-right: 0" bgcolor="#DBC7E2" height="10" valign="bottom">
+									&nbsp;</td>
+								</tr>
+							</table>
+							<!-- #EndEditable -->
+							</td>
+							<td width="5" rowspan="2">&nbsp;</td>
+							<td bgcolor="#DBC7E2" valign="top" rowspan="2" style="padding: 10px; line-height:150%">
+							<!-- #BeginEditable "main" -->
+							<p align="justify"><font color="#3E003E">
+							<font size="4">فهرست</font></font></p>
+							<p align="justify"><font size="2" color="#3E003E">
+							<br>
+							<b><a href="#_____&#1601;&#1589;&#1604;_&#1575;&#1608;&#1604;________">
+							فصل اول<span lang="fa">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</span>....................<span lang="fa">. </span>
+							&nbsp;دینی – احکام – تاریخ</a><br>
+							<a href="#____&#1601;&#1589;&#1604;_&#1583;&#1608;&#1605;______">
+							فصل دو<span lang="fa">م&nbsp;&nbsp;&nbsp;
+							</span>&nbsp;.....................<span lang="fa">&nbsp;
+							</span>حقوق</a><br>
+							<a href="#____&#1601;&#1589;&#1604;_&#1587;&#1608;&#1605;_____">
+							فصل سوم<span lang="fa">&nbsp;&nbsp;
+							</span>........<span lang="fa">..</span>...........<span lang="fa">
+							</span>&nbsp;زن نمونه</a><br>
+							<a href="#___&#1601;&#1589;&#1604;_&#1670;&#1607;&#1575;&#1585;&#1605;____">
+							فصل چهارم<span lang="fa">&nbsp;
+							</span>......<span lang="fa">....</span>...........<span lang="fa">
+							</span>&nbsp;خانواده</a><br>
+							<a href="#____&#1601;&#1589;&#1604;_&#1662;&#1606;&#1580;&#1605;____">
+							فصل پنجم<span lang="fa">&nbsp;&nbsp;&nbsp;
+							</span>.....<span lang="fa">..</span>..............<span lang="fa">
+							</span>&nbsp;بهداشت و سلامت</a><br>
+							<a href="#____&#1601;&#1589;&#1604;_&#1588;&#1588;&#1605;_____">
+							فصل ششم<span lang="fa">&nbsp;
+							</span>......<span lang="fa">...</span>............<span lang="fa">
+							</span>&nbsp;اجتماعی سیاسی</a></b><br>
+&nbsp;</font></p>
+							<p align="justify"><font size="2" color="#3E003E">
+							<br>
+							</font><font size="2" color="#F7F1F8">
+							<a name="_____&#1601;&#1589;&#1604;_&#1575;&#1608;&#1604;________">
+							<span style="background-color: #3E003E">
+							<span lang="fa">&nbsp;&nbsp;&nbsp;&nbsp; </span>فصل 
+							اول<span lang="fa">&nbsp;&nbsp;&nbsp;&nbsp; </span>
+							</span></a></font><a name="_____&#1601;&#1589;&#1604;_&#1575;&#1608;&#1604;________">
+							<span lang="fa"><font size="2" color="#3E003E">&nbsp;&nbsp;
+							</font></a></span><font size="2" color="#3E003E">
+							<br>
+							بانوان از منظر امام خمینی(ره) - سخنان مقام معظم 
+							رهبری - زن از ديدگاه قرآن:<span lang="fa"> </span>
+							قرآن و هویت زن، وحدت در دوگانگى وجودى، زن و مرد 
+							تافته يك بافته اند،<span lang="fa"> </span>زن 
+							عنصرگناه، آفرينش زيباى زن و مرد، استقلال زن، حمايت 
+							قرآن از استقلال زن،<span lang="fa"> </span>استقلال 
+							اقتصادى زن در قرآن، سمبل و الگوى زن با شخصيت - زنانی 
+							که در قرآن<span lang="fa"> </span>به آنها اشاره شده 
+							است - زن و تحصیل علم - سلامت روان زن و زن الگو در 
+							نگرش<span lang="fa"> </span>ديني - زنان در حكومت 
+							امام زمان (عج) : حضور پنجاه زن در بين ياران امام، 
+							زنان<span lang="fa"> </span>آسمانى، رجعت زنان، 
+							بانوان منتظر.</font></p>
+							<p align="justify"><font size="2" color="#3E003E">
+							احکام:<br>
+							احکام بانوان – مسائل شرعی<span lang="fa"> </span>می 
+							شود.</font></p>
+							<p align="justify"><font size="2" color="#3E003E">
+							تاریخ:<br>
+							ارزش زن در اديان و ملل.</font></p>
+							<p align="justify"><font size="2" color="#3E003E">
+							<br>
+							<br>
+							</font><font size="2" color="#F7F1F8">
+							<span style="background-color: #3E003E">
+							<span lang="fa">&nbsp;<a name="____&#1601;&#1589;&#1604;_&#1583;&#1608;&#1605;______">&nbsp;&nbsp;&nbsp;
+							</a></span><a name="____&#1601;&#1589;&#1604;_&#1583;&#1608;&#1605;______">
+							فصل دوم<span lang="fa">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</span></a></span></font>
+							<font size="2" color="#3E003E"><br>
+							گزیده ای از قانون مدنی: درخواستگاری، در نکاح، در 
+							مورد امکان فسخ نکاح، در<span lang="fa"> </span>طلاق 
+							مبحث اول، در عده، در اولاد، در خانواده، در انفاق - 
+							بی حجابی – مزاحمت:<span lang="fa"> </span>مزاحمت 
+							زنان و كودكان، مزاحمت تلفني - حقوق خانواده در رساله 
+							حقوق امام<span lang="fa"> </span>سجاد)ع( : مادر، 
+							پدر، همسر، فرزند، حقوق همسران : حقوق قانونی، حقوق 
+							اخلاقی،<span lang="fa">
+							</span>حق زن بر مرد، حق مرد بر زن، حق مادر و پدر : 
+							ده حق به تن، ده حق به قلب، ده<span lang="fa"> </span>
+							حق به مال، ده حق به زبان.<br>
+&nbsp;</font></p>
+							<p align="justify"><font size="2" color="#3E003E">
+							<br>
+							</font><font size="2" color="#F7F1F8">
+							<span style="background-color: #3E003E">
+							<a name="____&#1601;&#1589;&#1604;_&#1587;&#1608;&#1605;_____"><span lang="fa">&nbsp;&nbsp;&nbsp;
+							</span>فصل سوم<span lang="fa">&nbsp;&nbsp;&nbsp;&nbsp;
+							</span></a></span></font>
+							<font size="2" color="#3E003E"><br>
+							زن نمونه - برخی از زنان موفق ایرانی - زنان ايران و 
+							الگوي معتدل اسلامي:<span lang="fa"> </span>خودباوری، 
+							ارزشمندی، حضور اجتماعی، رشد علمی، توجه بیشتر به شان 
+							مادری و<span lang="fa"> </span>همسری، توجه به مسایل 
+							زنان.<br>
+&nbsp;</font></p>
+							<p align="justify"><font size="2" color="#3E003E">
+							<br>
+							</font><font size="2" color="#F7F1F8">
+							<span style="background-color: #3E003E">
+							<span lang="fa">&nbsp;<a name="___&#1601;&#1589;&#1604;_&#1670;&#1607;&#1575;&#1585;&#1605;____">&nbsp;&nbsp;
+							</a></span><a name="___&#1601;&#1589;&#1604;_&#1670;&#1607;&#1575;&#1585;&#1605;____">
+							فصل چهارم<span lang="fa">&nbsp;&nbsp;&nbsp;
+							</span></a></span></font>
+							<font size="2" color="#3E003E"><br>
+							خانواده، کانون مهر - رحامت عامل فطري روابط اجتماعي - 
+							نقش زنان تحصيل ك‏رده<span lang="fa"> </span>پس از 
+							تأسيس خانواده - ازدواج: فوايد ازدواج در کي نگاه کلی، 
+							مزایای ازدواج<span lang="fa"> </span>سالم برای خانم 
+							ها، ازدواج و شرط سني - ضرورت برنامه ریزی در ازدوا ج: 
+							مؤلفه<span lang="fa"> </span>های لازم در برنامه ریزی 
+							- هدف اصلی ازدواج و تشکیل خانواده چیست - ضرورت<span lang="fa">
+							</span>انجام مشاوره ازدواج - فوايد مشاوره ازدواج - 
+							ترغيب و تشويق اسلام در ازدواج<span lang="fa"> </span>
+							كردن - خصوصيات همسران شايسته و مناسب - رابطه قبل 
+							ازدواج- فرق عشق و<span lang="fa"> </span>هوس: ويژگي 
+							هاي عشق حقيقي، هوس و ويژگي هاي آن - همسران: ما و 
+							مردان -اراده و اعتماد بنفس شوهر خود را تقویت کنید – 
+							فرق بین خانومها وآقایون - مسايل<span lang="fa">
+							</span>جنسي: اتاق خواب، بدآموزي هاي جنسي، بهداشت 
+							جنسي، مراحل اولیه، مراحل<span lang="fa"> </span>آخر 
+							- قوانین مردانه - اختلافات خانوادگي: تعارضات 
+							خانوادگی تعارضات زنانشویی،<span lang="fa"> </span>
+							تعارضات والدین با فرزندان، علت شناسی تعارضات 
+							زنانشویی، علت شناسی تعارضات<span lang="fa"> </span>
+							والدین با فرزندان، تأثیر تعارضات خانوادگی، تأثیر 
+							تعارضات خانوادگی بر روابط<span lang="fa"> </span>
+							زناشویی، طلاق، تأثیر تعارضات خانوادگی بر روابط 
+							والدین با فرزندان - احكام<span lang="fa"> </span>
+							اوليه و ثانويه - گذشت و اغماض - فرزنداری: همسرگزینی، 
+							خودسازى والدين –<span lang="fa"> </span>فرزند 
+							ازنظرروایات - دعا برای فرزنددار شدن - آيا براي بچه 
+							دار شدن آمادگي<span lang="fa"> </span>داريد - چند 
+							توصیه - جلوگیری - آمیزش: قبل از آمیزش، درحین آمیزش، 
+							تغذیه،<span lang="fa"> </span>حالات پد رومادر، عوامل 
+							طبیعی تأثیر آنها برروی بدن، مکروهات حین آمیزش،<span lang="fa">
+							</span>اوقاتی که عمل جماع مطلوب است، اوقاتی که عمل 
+							جماع مکروه است، ادعیه،<span lang="fa"> </span>اذکار 
+							واعمال عبادی ویژه آمیزش - دوران بارداری - نيازهاي 
+							عاطفي: از بدو تولد<span lang="fa"> </span>تا دو 
+							سالگي- حقوق کودکان خردسال - پرورش هنر و خلاقیت کودک 
+							- خانواده<span lang="fa"> </span>و نوجوان - رابطه 
+							افقی والدین با نوجوان - ويژگيهاي دوران بلوغ: بلوغ 
+							جسمي<span lang="fa"> </span>)فيزيکي(، بلوغ جنسي، 
+							بلوغ رواني، بلوغ اقتصادي )اکونوم کي( و اجتماعي، بلوغ<span lang="fa">
+							</span>شرعي، دخترتان را برای بلوغ آماده سازید، 
+							یادداشتهایی برای مادران – تقویت<span lang="fa">
+							</span>اعتماد به نفس در دختران دختردروغگو - پیام 
+							پیامبر به دختران : بر دختر بودن<span lang="fa">
+							</span>خود بباليد، از فرصتها سود جو ييد، حياء را پاس 
+							داريد، همواره دانش بجو ييد،<span lang="fa"> </span>
+							قدردان والدين خود باشيد، با چه كسى رفاقت كنيم - صفات 
+							دوستان خوب و<span lang="fa"> </span>مناسب - صفات 
+							دوستان بد و نامناسب - انواع دوستان- وظيفه انسان در 
+							مقابل<span lang="fa"> </span>دوست خوب چيست - فرق بین 
+							دخترا و پسرا - ارزش حیات - جلوي خند هات را<span lang="fa">
+							</span>بگير دختر - معشوقه بودن - شالوده محبت - تبعیض 
+							- خودنمایی - تض ييع حرمت<span lang="fa"> </span>الهي 
+							- دختر تازه عروس - ارزشهای زنانه – <span lang="fa">&nbsp;</span>خانه 
+							داری - مديريت کدبانو، در امورمنزل - نگهداری و نظافت 
+							ظروف: تمیز کردن قوری استیل، پاک کردن ظروف 
+							آلومینیومی، کریستالها، جرم گرفتن قوری<span lang="fa"> </span>
+							یا سماور، صیقل دادن زیور آلات - شستشوی لباس و ملحفه 
+							و پرده : شستن لباسهای<span lang="fa"> </span>استرج و 
+							کشی، پاک شدن یقه بلوز مردانه، شستن ملحفه، درخشندگی 
+							حریر، - جهت<span lang="fa"> </span>جلوگیری از سوختگي 
+							با مايعات داغ چه نکاتی را باید رعایت کرد - بر طرف<span lang="fa">
+							</span>کردن لکه ها - تمیز کردن وسائل: طريقه تميز 
+							کردن گلدان، <span lang="fa">&nbsp;</span>رفع بو از ظروف، 
+							برطرف کردن بوی پیاز از کارد یا چاقو، پاک<span lang="fa">
+							</span>کردن لامپ برق، از بین بردن خطهای مداد رنگی، 
+							چگونه باز کردن در بلوري<span lang="fa"> </span>بطري، 
+							از بین بردن کرم چوب، شستشوي گل مصنوعي، باران و شوره 
+							کفش - نکات<span lang="fa"> </span>مهم آشپزی: جلوگیری 
+							از سیاه شدن ظروف آلومینیومی، جوش آمدن سریع آب،<span lang="fa">
+							</span>آش پرچربی، پختن سبزیجات، پخت غذا با حرارت 
+							ملایم، اگر فلفل غذای شما زیاد<span lang="fa"> </span>
+							باشد، پخت بهتر ماکارانی - خوشمزه تر شدن کوکوی سبزی، 
+							رفع بوی سوختگی،<br>
+							دستور پختن برنج، پخت برنج برای خانمهای کارمند، اگر 
+							نخواهید سبزی را خرد<span lang="fa"> </span>کنید، چه 
+							وقت باید به غذا نمک افزود، پوست کندن گوجه فرنگی، 
+							پوست کندن<span lang="fa"> </span>هویج، جلوگيري از 
+							سوختن شير، چگونه پختن تخم مرغ شکسته، ترک خوردن<span lang="fa">
+							</span>سیب زمینی، نگهداری مواد غذایی: نگهداری از سیب 
+							زمینی، نگهداری زرشک،<span lang="fa"> </span>نگهداری 
+							هویج، نگهداری چای عطری، نگهداری از روغن زیتون، چند 
+							نکته در مورد<span lang="fa"> </span>نگهداری حبوبات، 
+							خشک کردن و نگهداری سبزیجات، چند نکته در مورد ترشیها،<span lang="fa">
+							</span>چرا مربا کپک مي زند، راه مناسب براي باز کردن 
+							يخ مواد منجمد شده، راههای<span lang="fa"> </span>
+							تشخیص ماهی تازه از ماهی کهنه یا مانده - نگهداری از 
+							لوازم منزل: جاروبرقی-<span lang="fa"> </span>نظافت و 
+							نگهداری از یخچال، يخچال را کجا بگذاريم، مراقبت از 
+							اجاق گاز،<span lang="fa"> </span>نگهداری از مبل و 
+							صندلی چرمی، نگهداري صحيح از ماشين لباسشويي، بعضي از<span lang="fa">
+							</span>اشكالات رايج - توصيه هايي براي صرفه جويي در 
+							انرژي مصرفي<br>
+							<br>
+							حاشیه:<br>
+							نهاد خانواده - زیبایی و تجمل – آشنایی با کلیه آزمایش 
+							های قبل از ازدواج – ازدواج<span lang="fa"> </span>
+							کردن روزی را زیاد می کند – دختر میلیونر– دختر کوتاه 
+							فکر - انتتخاب آگاهانه - در<span lang="fa"> </span>
+							مغز عاشقان چه می گذرد؟ - غریزه فطری – ده روش برا ي 
+							توفيق زنان در نقش همسر:<span lang="fa"> </span>از 
+							خودتان مراقبت کنید، از رفتار و اعمال خوب همسر خود 
+							قدردانی کنید، روابط<span lang="fa"> </span>اشقانه 
+							خود را حفظ کنید، به او اجازه بدهید اوقاتی را در کنار 
+							دوستانش بگذراند،<span lang="fa"> </span>همسر خود را 
+							در اولویت قرار دهید، سعی نکنید او را عوض کنید، از او 
+							نخواهید که<span lang="fa"> </span>خواسته های شما را 
+							حدس بزند، وقتی را هم با دوستانتان بگذرانید، اجازه 
+							دهید بعضی<span lang="fa"> </span>اوقات آزاد باشد، به 
+							همسرتان ایمان داشته باشید و ایمان خود را نشان دهید - 
+							شناخت<span lang="fa"> </span>يك مرد - گاهي جهالت زن 
+							و مرد منجر به اختلاف آنها مي شود - شش اشتباه<span lang="fa">
+							</span>بزرگ که زنان در رابطه مردان مرتکب می شوند 
+							-آزمون مهارت هاي همسرداري -<span lang="fa"> </span>
+							بيست و يك راه تضميني براي فروپاشي رابطه - مسئوليتهاي 
+							پرورشي زن - با كودكان خلفه وعده ن يكند - نكاتي 
+							درباره رفتار با كودكان - عيب پوشي - شرك<span lang="fa"> </span>
+							شيطان - درباره مردان - تاثير وضعيت رواني مادر بر 
+							جنين - مراقبت از نوزاد تازه<span lang="fa"> </span>
+							متولد شده - تريپ بله گفتن دخترها - سوالات جنسي 
+							كودكان را چگونه پاسخ دهيم؟<span lang="fa"> </span>- 
+							ويژگي كودكان در سنين مختلف - هرگز كودكان را به خاطر 
+							سؤالاتش تحقير<span lang="fa"> </span>نكنيد - بستر 
+							خواب كودكان ده ساله را جدا كنيد - كتاب درماني چيست؟ 
+							- براي<br>
+							تربيت جنسي كودكان چه بايدكرد؟- راهبردهاي علمي در 
+							ارتباط والدين با نوجوان -<span lang="fa"> </span>در 
+							آستانه تكليف چه نكاتي را بايد رعايت كرد؟ - فيلم هاي 
+							پورنو - چگونگي<span lang="fa"> </span>تشخيص دروغگو: 
+							علائم دروغگوئي، زبان بدن دروغگوئي، ژست های احساسی و<span lang="fa">
+							</span>تناقض، تعاملات و واكنش ها، زمينه لفظي و 
+							محتوا، ساير علائم دروغ، نكات پاياني -<span lang="fa">
+							</span>- وقتي آدم دختر باشه خيلي عاليه - طرز پختن 
+							نيمرو توسط پسرا و دخترا - به نظر<span lang="fa">
+							</span>من پسرها خيلي احمق اند - قاعدگي - تبعيض - 
+							بازي دختران - پدر و مادرم دوست<span lang="fa">
+							</span>ندارند من آرايش كنم - ريحانه - حجاب از ديدگاه 
+							قرآن كريم - مهرباني و ترحم<span lang="fa"> </span>
+							برجوانان - كار كيماتور - مديريت امور خانه - نگهداري 
+							و نظافت لوازم منزل: تمیز<span lang="fa"> </span>کردن 
+							شیشه، تمیز کردن وسایل چوبی، از بین بردن خراشهای روی 
+							لوازم چوبی، تمیز<span lang="fa"> </span>کردن کاشی 
+							اطراف شومینه، تمیز کردن پشت تلویزیون یا وسایل برقی 
+							دیگر، تمیز<span lang="fa"> </span>کردن اجاق گاز، 
+							تمیز کردن عینک، کندن برچسب از روی کالا - شارژ باطری 
+							- زنان<span lang="fa"> </span>و پركردن خلاء ها : 
+							چگونه زنان كم كاري ها و خلاء هاي روحي را پر مي كنند،<span lang="fa">
+							</span>پركردن خلاءهاي صميمي و نزد كيي، پركردن خلاهاي 
+							ارتباطي - دختر كه رسيد به<span lang="fa"> </span>
+							بيست - مردها!!! - بدون شرح - كارهايي كه خانوم ها 
+							هرگز نمي توانند انجام بدهند.<br>
+							<br>
+							<br>
+							</font><font size="2" color="#F7F1F8">
+							<span style="background-color: #3E003E">
+							<a name="____&#1601;&#1589;&#1604;_&#1662;&#1606;&#1580;&#1605;____"><span lang="fa">&nbsp;&nbsp;&nbsp;
+							</span>فصل پنجم<span lang="fa">&nbsp;&nbsp;&nbsp;
+							</span></a></span></font>
+							<font size="2" color="#3E003E"><br>
+							آشنایی با عادت ماهانه دختران - سوالات دخترها در زمان 
+							بلوغ - قاعدگي: نشانگان<span lang="fa"> </span>پیش از 
+							قاعدگیPMS - آزمایشاهایی که لازم است افراد بعد از 
+							بیست سالگی انجام<span lang="fa"> </span>دهند- مجرد 
+							ماندن و نداشتن رابطه جنسی می تواند برای بدن مضر باشد<span lang="fa">
+							</span>- بهداشت بانوان: راهنمای جلوگیری از عفونت های 
+							مجاری ادراری<span lang="fa"> </span>و مهبلی، نکات 
+							بهداشتی ویژه دختران و زنان - 5 یماری که زنها را خیلی 
+							م یترساند:<br>
+							- پوکي استخوان چيست - یائسگی - رضایت جنسی و ناتوانی 
+							جنسی<span lang="fa"> </span>در زنان - بارداری - 
+							آشنایی با نشانه های حاملگی - روش اورژانس جلوگیری از<span lang="fa">
+							</span>بارداری - غذاهایی که مادر نباید مصرف کند - 
+							سلامتی قبل از بارداری - برنامه ریزی<span lang="fa">
+							</span>پیش از باردار شدن –بارداری مادران ائمه )ع( - 
+							نامگذاری ماههای جنین –<span lang="fa"> </span>ورزش 
+							برای بانوان در دوران بارداری و پس از آن - آسان شدن<span lang="fa">
+							</span>زایمان - وضع حمل - علایم زایمان - علائم خطر 
+							در دوران نقاهت - مراقبت از نوزاد:<span lang="fa">
+							</span>آشنایی با روشهای شیر دادن و مزایای شیر مادر، 
+							مزایای شیر مادر، نکاتی در مورد<span lang="fa">
+							</span>شیردهی، چند توصیه، خفگی در نوزاد - علائم 
+							خفگی، نخستین اقدام ضروری، تب<span lang="fa"> </span>
+							کودکان - اختلالات و بیماریهای شیرخوار<span lang="fa">
+							</span>بهداشت روانى در خانواده و اجتماع - رابطه توکل 
+							به خدا با کاهش اضطراب -<span lang="fa"> </span>ادب 
+							در زندگی زناشویی - روش هایی برای افزایش انرژی و تحرک 
+							در زندگی - یک<span lang="fa"> </span>زن کامل باش - 
+							تفاوتهای بیولوژیکی - تفاوتهای روانشناسی - شادی روح - 
+							عوامل<span lang="fa"> </span>شاد ي آفرين: ايمان، 
+							رضايت و شکيبايي، پرهيز از گناه، مبارزه با نگراني، 
+							تبسم و خنده،<span lang="fa"> </span>شوخ طبعي، بوي 
+							خوش، پوشيدن لباس هاي روشن، خودآرايي، تلاش کردن و 
+							پرهيز<span lang="fa"> </span>از تنبلي، سير و سفر، 
+							اميد به زندگي - زبان حرکات بدن چیست:<span lang="fa">
+							</span>بدست آوردن سلامت روح – انسان ها همان چیزی می 
+							شوند که فکر می کنند - <span lang="fa">&nbsp;</span>روز 
+							جدید را متفاوت شروع کنید - رویارویی خوب است - چگونه 
+							می توانید آنچه را<span lang="fa"> </span>که ندارید 
+							به دست آورید و آنچه را که دارید حفظ کنید - روح بزرگ، 
+							فکر بزرگ<span lang="fa"> </span>و مثبت گرایی - بیست 
+							نکته جهت افزایش اعتماد به نفس - چگونه می توان شخصیتی<span lang="fa">
+							</span>محبوب داشت - ده روش جهت کاهش فشار روانی - 
+							ریلکس تراپی چیست و چگونه<span lang="fa"> </span>
+							انجام دهیم - بخشش چیست - آزمونی ساده برای تعیین 
+							میزان اضطراب شما - چهل<span lang="fa"> </span>اصل 
+							شادي بخش - حالات هيجاني در دوران جواني - شب ها بدون 
+							فکر کردن به<span lang="fa"> </span>مسائل استرس زای 
+							روزانه بخوابید - ویژگیهای دوست خوب - نکته های کوچک<span lang="fa">
+							</span>زندگی - روشهای یافتن اعتماد به نفس – با جسم 
+							خود خوب رفتار کنید – آزمونی<span lang="fa"> </span>
+							برای بررسی میزان عشق و دوستی .<br>
+							<br>
+							حاشیه:<br>
+							تندرستی - تغذیه - توصيه هاي براي موفقيت درکاهش وزن – 
+							زنان ورزشکار<span lang="fa"> </span>- هنگام ورزش 
+							باید به نکات زیر توجه کامل داشت - نکاتی برای حفظ 
+							سلامتی<span lang="fa"> </span>در هنگام کار با 
+							کامپیوتر - ورزش بزرگسالان - به تأخیر انداختن عوارض 
+							نامطلوب<span lang="fa"> </span>پیری با ورزش - فواید 
+							ورزش برای سالمندان - اسلام و غریزه جنسی - مراقبت و 
+							حفظ<span lang="fa"> </span>تندرستی در دوران یائسگی - 
+							تمرینات درمانی کمر درد - آرایشی<br>
+							بهداشتی - چگونه اندامی زیبا داشته باشیم - چگونه شكل 
+							قرارگیری بدن را بهبود<span lang="fa"> </span>بخشیم - 
+							هویج برای پوست - ماسک هويج براي پوست هاي خشک و حساس 
+							- نكاتي<span lang="fa"> </span>در مورد اودكلن: چه 
+							اودکلنی بخریم، روش تست ادوکلن، ترکیباتی در ادوکلن ها 
+							که<span lang="fa"> </span>باید از آنها پرهیز کرد، 
+							چطور بفهمیم عطری با نوع پوستمان سازگاری دارد<span lang="fa">
+							</span>سلامتی مو : انواع موها،طريقه تشخيص نوع موها، 
+							موهاي چرب، موهاي خشک،<span lang="fa"> </span>ريزش مو 
+							Alopecia ، عوامل داخلي مؤثردرريزش مو، عوامل خارجي 
+							مؤثر درريزش<span lang="fa"> </span>مو، شوره سر، چه 
+							رنگ مویی برای شما مناسب است - الكتروليز براي خانم 
+							هاي باردار<span lang="fa"> </span>- پاکیزگی پوست - 
+							زیبا ساختن ابروها : داشتن ابروهای زیبا، شکل درست 
+							ابرو را پیدا<span lang="fa"> </span>کنید <br>
+							<br>
+							<br>
+							</font><font size="2" color="#F7F1F8">
+							<span style="background-color: #3E003E">
+							<a name="____&#1601;&#1589;&#1604;_&#1588;&#1588;&#1605;_____"><span lang="fa">&nbsp;&nbsp;&nbsp;
+							</span>فصل ششم<span lang="fa">&nbsp;&nbsp;&nbsp;&nbsp;
+							</span></a></span></font>
+							<font size="2" color="#3E003E"><br>
+							سخنان مقام معظم رهبری: درمساله زن ازدنیا طلبکاریم - 
+							زن بنیان جامعه - خود شناسى:<span lang="fa"> </span>
+							عوامل ناشناخته ماندن روح زن، عدم تماس مستقيم بين زن 
+							وجامعه، تأثير نوع نگرش<span lang="fa"> </span>مردان 
+							نسبت به زنان، فقدان زمينه شكوفا ىي استعدادها، 
+							فراوانى تحولات روحى، تسليم<span lang="fa"> </span>
+							پذيرى در هر شرايطى، زن سوم - خانم ها سخت نگیرید - 
+							اهداف زنان - حفظ روابط<span lang="fa"> </span>
+							زناشويي از زوال - ابعاد وجودی زن - جنس ضعیف - آرایش، 
+							مد و بهره کشی از زنان<span lang="fa"> </span>- زن، 
+							اشتغال و فرهنگ -دختر ایثارگر- برخی دلایلی عقلی لزوم 
+							حجاب: دلیل عقلی نوع اول، دلیل عقلی نوع<span lang="fa">
+							</span>دوم - برخی آثار عدم رعایت حجاب - بد حجابی 
+							باعث خشونت و آزار جنسی - « خود<span lang="fa">
+							</span>نمایی - حيا و خودآرايي و نقش آنها در سلامت 
+							رواني زن - بررسی برخی از آسیب<span lang="fa"> </span>
+							های اجتماعی زنان: مشکلات زنان و موانع پیش رو، بالا 
+							رفتن سن ازدواج، افزايش آمار<span lang="fa"> </span>
+							طلاق، زنان تنها، استفاده ابزاري از زن، زنان خياباني، 
+							افزايش بيمار يهاي جنسي،كاهش<span lang="fa"> </span>
+							امنيت اجتماعي دختران - بررسي پيامدهاي اجتماعي احساس 
+							بي عدالتي جنسي - تجاوز<span lang="fa"> </span>جنسی و 
+							پس لرز ه های روانی - تعريف دختران فرارى - اهمیت و 
+							ضرورت بررسی معضل<span lang="fa"> </span>دختران فراری
+							<br>
+							<br>
+							حاشیه:<br>
+							رو به سوی امام عصر - چهره زن و مرد در قرآن - مشکلات 
+							زنان کارگر در نگاه مردان<span lang="fa"> </span>
+							کارفرما - خط قرمزهاي صميميت در محيط كار - خانواده و 
+							اصلاح الگوی مصرف-<span lang="fa"> </span>اقسام 
+							گناهان - نگاهى به نقش پوشش در خانواده - دخترتسلیم 
+							ناپذیر - حجاب زن<span lang="fa"> </span>- سیمای 
+							حقیقی مساله حجاب - راهكارهايي براي مقابله<span lang="fa">
+							</span>با رفتارهاي تبعيض آميز <br>
+&nbsp;</font><!-- #EndEditable --></td>
+						</tr>
+						<tr>
+							<td width="170" valign="bottom" bgcolor="#DBC7E2">
+							<img border="0" src="images/corner.jpg" width="170" height="192"></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+					<td height="5"></td>
+				</tr>
+				<tr>
+					<td bgcolor="#DBC7E2" align="center" height="30">
+					<font color="#3E003E" style="font-size: 11pt">این سایت تنها 
+					سایت مجاز فروش کتاب همراه بانوان است.</font></td>
+				</tr>
+				<tr>
+					<td align="center" height="5"></td>
+				</tr>
+				<tr>
+					<td>
+					<table border="0" width="100%" bgcolor="#B587C0" cellspacing="0" cellpadding="0" height="20">
+						<tr>
+							<td align="center" height="15" width="280">&nbsp;</td>
+							<td align="center" height="15" width="70">
+							<font color="#3E003E" style="font-size: 9pt">
+							<a href="index.htm">صفحهٔ اصلی</a></font></td>
+							<td align="center" height="15"><span lang="en-us">
+							<font color="#3E003E" style="font-size: 9pt">|</font></span></td>
+							<td align="center" height="15" width="70">
+							<span lang="fa"><font color="#3E003E">
+							<span style="font-size: 9pt"><a href="about.htm">
+							در این کتاب</a></span></font></span></td>
+							<td align="center" height="15">
+							<font color="#3E003E" style="font-size: 9pt">|</font></td>
+							<td align="center" height="15" width="70">
+							<font color="#3E003E" style="font-size: 9pt">
+							<a href="order.htm">سفارش کتاب</a></font></td>
+							<td align="center" height="15">
+							<font color="#3E003E" style="font-size: 9pt">|</font></td>
+							<td align="center" height="15" width="70">
+							<font color="#3E003E" style="font-size: 9pt">
+							<a href="contact.htm">ارتباط با ما</a></font></td>
+							<td align="center" height="15" width="280">&nbsp;</td>
+						</tr>
+						<tr>
+							<td align="center" height="30" colspan="9" bgcolor="#3E003E">
+							<table border="0" width="100%" cellspacing="0" cellpadding="0">
+								<tr>
+									<td width="440">
+									<p align="left">
+									<font color="#DBC7E2" style="font-size: 9pt">
+									© تمامی حقوق پرای صاحب سایت محفوظ است.</font></td>
+									<td width="20">
+									<p align="center"><font color="#DBC7E2">|</font></td>
+									<td>
+									<font color="#DBC7E2" style="font-size: 9pt">
+									Made and Designed by Charsooghi ©2010</font></td>
+								</tr>
+							</table>
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
